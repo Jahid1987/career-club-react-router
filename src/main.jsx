@@ -7,6 +7,7 @@ import Home from "./Pages/Home.jsx";
 import Error from "./Pages/Error.jsx";
 import Applied from "./Pages/Applied.jsx";
 import Blog from "./Pages/Blog.jsx";
+import JobDetails, { loader as jobLoader } from "./Pages/JobDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,11 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home></Home>,
+      },
+      {
+        path: "/jobes/:jobId",
+        loader: jobLoader,
+        element: <JobDetails></JobDetails>,
       },
       {
         path: "/applied",

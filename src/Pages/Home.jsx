@@ -1,7 +1,6 @@
 import Banner from "../Components/Banner";
-import ButtonOutline from "../Components/ButtonOutline";
 import Categories from "../Components/Categories";
-import GradientText from "../Components/GradientText";
+import Jobs from "../Components/Jobs";
 
 const Home = () => {
   return (
@@ -11,8 +10,10 @@ const Home = () => {
       <section className="mt-20">
         <Categories></Categories>
       </section>
-      <GradientText></GradientText>
-      <ButtonOutline></ButtonOutline>
+      {/* featured jobs  */}
+      <section className="my-20">
+        <Jobs></Jobs>
+      </section>
     </div>
   );
 };

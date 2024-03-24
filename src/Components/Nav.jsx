@@ -17,7 +17,13 @@ const Nav = () => {
   );
   return (
     <div className="h-[68px]">
-      <div className="navbar bg-base-200 fixed z-10">
+      <div
+        style={{
+          background:
+            "linear-gradient(90deg, rgba(126, 144, 254, 0.05) 0%, rgba(152, 115, 255, 0.05) 100%)",
+        }}
+        className="navbar max-w-[1024px]"
+      >
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
