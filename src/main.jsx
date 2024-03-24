@@ -5,9 +5,9 @@ import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./Pages/Home.jsx";
 import Error from "./Pages/Error.jsx";
-import Applied from "./Pages/Applied.jsx";
+import Applied, { loader as applliedJobsLoader } from "./Pages/Applied.jsx";
 import Blog from "./Pages/Blog.jsx";
-import JobDetails, { loader as jobLoader } from "./Pages/JobDetails.jsx";
+import JobDetails, { loader as singleJobLoader } from "./Pages/JobDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -21,12 +21,13 @@ const router = createBrowserRouter([
       },
       {
         path: "/jobes/:jobId",
-        loader: jobLoader,
+        loader: singleJobLoader,
         element: <JobDetails></JobDetails>,
       },
       {
         path: "/applied",
         element: <Applied></Applied>,
+        loader: applliedJobsLoader,
       },
       {
         path: "/blogs",

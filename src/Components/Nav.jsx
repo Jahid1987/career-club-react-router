@@ -16,7 +16,7 @@ const Nav = () => {
     </>
   );
   return (
-    <div className="h-[68px]">
+    <div className="h-[64px] lg:h-[68px]">
       <div
         style={{
           background:
@@ -44,7 +44,7 @@ const Nav = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content space-y-2 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               {links}
             </ul>
@@ -52,7 +52,7 @@ const Nav = () => {
           <Link className="btn btn-ghost text-3xl font-bold">Career Hub</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{links}</ul>
+          <ul className="menu menu-horizontal space-x-2">{links}</ul>
         </div>
         <div className="navbar-end">
           <Button name="Apply Now"></Button>

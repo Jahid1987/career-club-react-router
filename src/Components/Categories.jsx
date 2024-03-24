@@ -15,7 +15,7 @@ const Categories = () => {
         title="Job Category List"
         text="Explore thousands of job opportunities with all the information you need. Its your future"
       ></SectionTitle>
-      <div className="grid grid-cols-4 gap-4 max-w-[90%] mx-auto">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-[90%] mx-auto">
         {categories.map((category) => (
           <Category key={category.id} category={category}></Category>
         ))}

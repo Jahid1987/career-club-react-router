@@ -12,7 +12,7 @@ const Banner = () => {
     >
       <div className="hero-content py-0 flex-col lg:flex-row-reverse">
         <img src={hero} className="max-w-sm" />
-        <div>
+        <div className="mb-3 lg:mb-0">
           <h1 className="text-5xl font-bold">
             One Step Closer To Your
             <GradientText

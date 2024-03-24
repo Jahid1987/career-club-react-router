@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
-const Button = ({ name = "Button", handleClick }) => {
+const Button = ({ name = "Button", handleClick, width }) => {
   return (
     <button
       onClick={handleClick}
-      className="btn btn-sm md:btn-md text-white"
+      className={`btn btn-sm md:btn-md text-white ${width ? "w-full" : ""}`}
       style={{
         borderRadius: "8px",
         background:
@@ -17,5 +17,6 @@ const Button = ({ name = "Button", handleClick }) => {
 Button.propTypes = {
   name: PropTypes.string,
   handleClick: PropTypes.func,
+  width: PropTypes.string,
 };
 export default Button;

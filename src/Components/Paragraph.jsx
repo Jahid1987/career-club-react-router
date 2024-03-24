@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 const Paragraph = ({ name, children }) => {
   return (
-    <p>
+    <p className="mb-2">
       <span className="text-lg font-bold">{name}: </span>
       <span className="text-gray-500">{children}</span>
     </p>
