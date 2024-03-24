@@ -2,6 +2,8 @@ import PropTypes from "prop-types";
 import ButtonOutline from "./ButtonOutline";
 import Button from "./Button";
 import { Link } from "react-router-dom";
+import locationIcon from "../assets/Location.png";
+import money from "../assets/money1.png";
 const Job = ({ job }) => {
   const {
     logo,
@@ -22,9 +24,15 @@ const Job = ({ job }) => {
         <ButtonOutline name={remote_or_onsite}></ButtonOutline>
         <ButtonOutline name={job_type}></ButtonOutline>
       </div>
-      <div>
-        <p className="text-gray-400">{location}</p>
-        <p className="text-gray-400">{salary}</p>
+      <div className="flex gap-3">
+        <p className="text-gray-400 flex gap-2">
+          <img src={locationIcon} alt="" />
+          {location}
+        </p>
+        <p className="text-gray-400 flex gap-2">
+          <img src={money} alt="" />
+          {salary}
+        </p>
       </div>
       <div>
         <Link to={`/jobes/${id}`}>

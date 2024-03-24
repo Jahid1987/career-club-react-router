@@ -46,7 +46,7 @@ const JobDetails = () => {
       >
         Job Details
       </div>
-      <div className="px-3 flex flex-col lg:flex-row gap-3 mt-5">
+      <div className="px-3 xl:px-0 flex flex-col lg:flex-row gap-3 mt-5">
         <div>
           <Paragraph name="Job Description">{job_description}</Paragraph>
           <Paragraph name="Job Responsibility">{job_responsibility}</Paragraph>
